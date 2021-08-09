@@ -1,0 +1,11 @@
+{{ if eq (.Param "mathjax") true }}
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="{{ .Param "mathjaxPath" | default "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" }}{{ with .Param "mathjaxConfig" | default "TeX-AMS-MML_HTMLorMML" }}?config={{ . }}{{ end }}" async></script>
+{{ end }}

@@ -1,0 +1,61 @@
+{{- $currentNode := . }}
+{{- if .Site.Menus.main }}
+<nav class="menu">
+
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+	</button>
+
+	<ol class="menu-list">
+		{{- range .Site.Menus.main }}
+		{{- if .Name }}
+		<li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} imhere{{ end }}">
+			<a class="menu-link" href="{{ .URL }}">
+        <span class="menu-text">
+        {{ .Name }}
+        <!-- {{ if .HasChildren}}&nbsp;<i class="fa fa-chevron-down"></i>{{ end }} -->
+        {{ if .HasChildren}}&nbsp;v{{ end }}
+        </span>
+			</a>
+      {{- if .HasChildren }}
+      <ol class="sub-menu">
+        {{- range .Children }}
+        <li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} imhere{{ end }}">
+          <a class="menu-link" href="{{ .URL }}">
+            {{ .Pre }}
+            <span class="menu-text">
+              {{ .Name }}
+              <!-- {{ if .HasChildren}}&nbsp;<i class="fa fa-chevron-right"></i>{{ end }} -->
+              {{ if .HasChildren}}&nbsp;>{{ end }}
+            </span>
+            {{ .Post }}
+          </a>
+          {{- if .HasChildren }}
+          <ol class="sub-sub-menu">
+            {{- range .Children }}
+            <li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} imhere{{ end }}">
+              <a class="menu-link" href="{{ .URL }}">
+                {{ .Pre }}
+                <span class="menu-text">
+                  {{ .Name }}
+                  <!-- {{ if .HasChildren}}&nbsp;<i class="fa fa-chevron-right"></i>{{ end }} -->
+                  {{ if .HasChildren}}&nbsp;>{{ end }}
+                </span>
+                {{ .Post }}
+              </a>
+            </li>
+            {{- end }}
+          </ol>
+          {{- end }}
+        </li>
+        {{- end }}
+      </ol>
+      {{- end }}
+		</li>
+		{{- end }}
+		{{- end }}
+	</ol>
+</nav>
+{{ else -}}
+<div class="divider"></div>
+{{- end }}
