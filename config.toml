@@ -9,8 +9,8 @@ paginate = "10" # number of posts per page
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 # [Author] # Used in authorbox
-#   name = "THE AMAZING WOMBAT"
-#   bio = "Wombat is a mazing. That is what it is. It is exactly one mazing."
+#   name = ""
+#   bio = ""
 #   avatar = "img/avatar.png"
 
 [Params]
