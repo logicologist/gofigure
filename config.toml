@@ -6,7 +6,7 @@ theme = "mainroad"
 
 paginate = "10" # number of posts per page
 
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+googleAnalytics = "UA-62255959-1" # Enable Google Analytics by entering your tracking id
 
 # [Author] # Used in authorbox
 #   name = ""
