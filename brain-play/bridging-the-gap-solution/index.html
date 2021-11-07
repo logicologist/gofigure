@@ -1,0 +1,318 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Bridging the Gap - Solution - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Bridging the Gap - Solution</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Bridging-the-Gap-Solution.pdf>→ Print-friendly version</a>
+</div>
+<p>a. After a bit of thinking, the first thing we notice about this problem is that the bridges are the only things that matter: the shape and size of the islands are irrelevant. So we can simplify each terrestrial region down to a single point &ndash; let&rsquo;s call the points A, B, C, and D &ndash; and let each bridge correspond to a line between two points:</p>
+<p><img src=/img/Bridges2.jpeg alt></p>
+<p>In fact, we can now get rid of the map entirely and just work with the points and lines:</p>
+<p><img src=/img/Bridges3.jpeg alt></p>
+<p>What we just made is called a <em>graph</em>: it has a set of <em>nodes</em> and a set of <em>edges</em> connecting the nodes. Any tour route will start at one of the nodes and trace a set of connected edges before ending at a (possibly different) node.</p>
+<p>After playing around with this graph for a while, we might notice the following: whenever we pass through a node in the middle of a tour route, we take one bridge into the node and another bridge away from it. This tells us something very useful: except possibly for the start and end nodes, every node will have an even number of traveled-over edges connecting to it. For instance:</p>
+<p><img src=/img/Bridges4.jpeg alt></p>
+<p>This isn&rsquo;t a solution, of course, because it skips two bridges. Notice, though, that node B has 4 traveled edges connecting to it, and nodes C and D each have 2 traveled edges connecting to them. (A happens to have an even number of traveled edges connecting to it since it&rsquo;s both the start node and the end node.)</p>
+<p>If the graph has a solution to Morton&rsquo;s tour route problem, then, it must have at most 2 nodes (the start and end nodes) with an odd number of connected edges. As a result, we can say the following for certain: Any graph where more than 2 nodes have an odd number of connected edges <em>cannot</em> have a solution to Morton&rsquo;s problem.</p>
+<p>Looking back at our bridge graph, we now see that all four nodes have an odd number of bridges connecting to them. So in the current bridge arrangement, it is impossible for Morton to find a tour route that crosses every bridge exactly once.</p>
+<p>b. With the northwesternmost bridge gone, the bridge graph now looks like this:</p>
+<p><img src=/img/Bridges5.jpeg alt></p>
+<p>Nodes B and D now both have even numbers of edges connecting to them. Nodes A and C, though, both have odd numbers of edges connecting to them, so they both have to be endpoints. Now a bit of experimentation leads us to one solution, starting at node A and ending at node C:</p>
+<p><img src=/img/Bridges6.jpeg alt></p>
+<p>(You may have found a different solution than this one. That&rsquo;s great! How many more solutions can you identify?)</p>
+<p>Since both nodes A and C have to be endpoints, Morton can build a tour route that crosses each bridge exactly once, but not one that starts and ends at the same node.</p>
+<p>c. To make it possible to complete the bridge tour with the same starting and ending node, all nodes must have an even number of bridges connecting to them. The only way we can do that is to connect nodes A and C with another bridge:</p>
+<p><img src=/img/Bridges7.jpeg alt></p>
+<p>And indeed, a bit of experimenting turns up a complete bridge tour with the same starting and ending node A:</p>
+<p><img src=/img/Bridges8.jpeg alt></p>
+<p>This, then, is what Morton should propose at the town hall meeting.</p>
+<p>By the way, a path through a graph that crosses each edge exactly once is called an <em>Eulerian path</em>, and an Eulerian path that also starts and ends at the same node is called an <em>Eulerian circuit</em>. Euler (pronounced &ldquo;oiler&rdquo;) was the mathematician who first worked on this problem, which became the field of graph theory. We just rediscovered Euler&rsquo;s result ourselves!</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

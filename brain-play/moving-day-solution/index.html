@@ -1,0 +1,310 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Moving Day - Solution - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Moving Day - Solution</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Moving-Day-Solution.pdf>→ Print-friendly version</a>
+</div>
+<p>The first thing we notice is that the choices for the basketballs, volleyballs, baseballs, and golf balls are all <em>independent</em>: how Leslie assigns one type of ball to the different trucks doesn&rsquo;t restrict how she might assign a different type of ball to the different trucks. So we can start with just the basketballs and hope that we can re-use our technique on the other kinds of balls.</p>
+<p>Examining just the basketballs, we next might notice that all the balls are the same: they&rsquo;re <em>indistinguishable</em>. The trucks, on the other hand, are numbered and therefore are <em>distinguishable</em>. That means assigning all 9 basketballs to Truck 1 is different from assigning all 9 basketballs to Truck 5, but if two trucks both contain basketballs, swapping a basketball from one truck with a basketball from the other truck doesn&rsquo;t change anything.</p>
+<p>How does this help us? It means that Leslie can line up all the basketballs in a row, put down &ldquo;dividers&rdquo; at some points in the lineup, and give the resulting groups basketballs in between the dividers to the corresponding trucks. What&rsquo;s clever about this setup is that Leslie&rsquo;s choice of where the dividers are placed corresponds exactly to an assignment of basketballs to trucks. In particular, basketballs are still indistinguishable (swapping two of them in the lineup doesn&rsquo;t change anything about the placement of the dividers) and trucks are still distinguishable (to change which trucks get which numbers of basketballs, you have to change where the dividers are placed).</p>
+<p>Okay, so now we&rsquo;ve lined up all the basketballs and we&rsquo;re choosing where to put the dividers. How many dividers do we need? After a bit of thinking, we decide that 4 is plenty: there are 5 trucks, so there are 4 &ldquo;gaps between the trucks.&rdquo; The groups of basketballs at either end of the lineup won&rsquo;t have a divider on the other side of them, but that&rsquo;s fine &ndash; we&rsquo;ll just know that when we get to the end of the line, we&rsquo;re done with the group. Here&rsquo;s what this looks like: to assign 1 basketball to Truck 1, 3 to Truck 2, 2 each to Trucks 3 and 4, and 1 to Truck 5, Leslie can place dividers like so:</p>
+<p><img src=/img/Basketballs-example-1.jpg alt></p>
+<p>&ldquo;I get it,&rdquo; you might say at this point. &ldquo;There are 9 basketballs, so there are 8 &lsquo;gaps between the basketballs&rsquo; in which the dividers might go, and we want to pick 4 of these gaps to contain dividers, so there are ${8 \choose 4}$ ways to do this.&rdquo;</p>
+<p>Hold on, though! You&rsquo;re close, but there&rsquo;s a catch: some trucks might not be assigned any basketballs at all. This corresponds to having multiple dividers in the same &ldquo;gap between basketballs&rdquo; or having one or more dividers at the end of a row. For instance, to assign 3 basketballs to Truck 1, 1 to Truck 2, 5 to Truck 4, and none to Trucks 3 or 5, Leslie can place dividers like so:</p>
+<p><img src=/img/Basketballs-example-2.jpg alt></p>
+<p>So we&rsquo;re not quite done. Here&rsquo;s how we fix it: we put down 9 + 4 &ldquo;placeholders&rdquo; that could each hold either a basketball or a divider. Then we choose 4 of those placeholders to contain dividers, and the rest of the placeholders will contain basketballs. Now we can have two dividers in adjacent placeholders, meaning a truck with zero basketballs. Think this over some more and make sure you understand why this fixes the problem in our first attempted solution.</p>
+<p>So there are ${9+4 \choose 4}$ ways to assign the basketballs to the 5 trucks. Does this approach work for the other types of balls also? Luckily, yes! Following the same reasoning, we can determine that there are ${61+4 \choose 4}$ ways to assign the volleyballs, ${88+4 \choose 4}$ ways to assign the baseballs, and ${323+4 \choose 4}$ ways to assign the golf balls. Since all of these choices are independent, we multiply them to get a final answer of</p>
+<p>$$ {13 \choose 4}{65 \choose 4}{92 \choose 4}{327 \choose 4} $$</p>
+<p>ways to assign all the balls to the five trucks. That&rsquo;s a pretty big number!</p>
+<p>(By the way, this kind of problem comes up fairly often when counting things. You might see it called &ldquo;balls in boxes&rdquo; or &ldquo;stars and bars&rdquo; in other contexts.)</p>
+<p>As a twist on the problem, suppose the driver of Truck 3 really doesn&rsquo;t like golf and doesn&rsquo;t want to transport any of the golf balls. Now how many ways are there for Leslie to assign the balls to the trucks? Can you find the general formula for the number of ways to assign balls to trucks if there are $n$ indistinguishable balls and $k$ distinguishable trucks?</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

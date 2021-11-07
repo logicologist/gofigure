@@ -1,0 +1,392 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Factorials! - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class="menu-item imhere">
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Factorials!</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Factorials-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>Five-year-old Harry is obsessed with rabbits. For his birthday he got five books about rabbits to put on his shelf: The Care and Keeping of Rabbits, 101 Things You Didn&rsquo;t Know About Rabbits, Common Diseases of Rabbits, How to Draw Rabbits, and Super-Sam and the Giant Were-Rabbit. Harry is now trying to decide how to arrange his new books on his bookshelf. <strong>How many ways can he put the books in order?</strong></p>
+<p>Well, he could start by lining them up in the order he unwrapped his presents, and then shuffling them, and then shuffling them again. But the obvious problem is that Harry has no way of knowing if he&rsquo;s shuffled them the same way twice or whether he&rsquo;s shuffled them in all possible ways. Anyway, that looks like a lot of work. There has to be an easier way.</p>
+<p>Let&rsquo;s start with a simpler problem.</p>
+<p>Suppose Harry has only unwrapped two of his presents: Care & Keeping and 101 Things. Now there are only two ways to order his new books:</p>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>
+<span style=color:#f90;font-weight:700>101 Things</span>
+</center>
+<center style="margin-bottom: 1.5em;">
+<span style=color:#f90;font-weight:700>101 Things</span>
+<span style=color:red;font-weight:700>Care & Keeping</span>
+</center>
+<p>$2$ ways. Okay, that&rsquo;s pretty simple. Now Harry unwraps Common Diseases. How many ways are there now?</p>
+<p>Well, we know that one of the books has to come first in the lineup. Any of the three books could come first. Let&rsquo;s start with Care & Keeping. Now what&rsquo;s left? Two books to order! We just did this above!</p>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>
+</center>
+<center style="margin-bottom: 1.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>
+</center>
+<p>Remember, Care & Keeping isn&rsquo;t the only book that can be first. Let&rsquo;s repeat what we just did, this time with 101 Things and with Common Diseases.</p>
+<center style="margin-bottom: 0.5em;">
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:red;font-weight:700>Care & Keeping</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>
+</center>
+<center style="margin-bottom: 1.5em;">
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:red;font-weight:700>Care & Keeping</span>
+</center>
+<p>For each of the $3$ books that can start the lineup, there are $2$ possible lineups. So there are $3 \cdot 2 = 6$ ways to order three books. Now what happens when Harry unwraps How to Draw?</p>
+<p>Let&rsquo;s tackle four books in the same way we tackled three. Pick one of the four books to put first. Then there are three books left, and we can order them like we did above.</p>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:#00f;font-weight:700>How to Draw</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:#00f;font-weight:700>How to Draw</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:#00f;font-weight:700>How to Draw</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:#00f;font-weight:700>How to Draw</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#00f;font-weight:700>How to Draw</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>
+</center>
+<center style="margin-bottom: 0.5em;">
+<span style=color:red;font-weight:700>Care & Keeping</span>,
+<span style=color:#00f;font-weight:700>How to Draw</span>,
+<span style=color:#0c0;font-weight:700>Common Diseases</span>,
+<span style=color:#f90;font-weight:700>101 Things</span>
+</center>
+/
+<p>Hm. This is getting messy. We&rsquo;ve got six possibilities for just one of the four ways to start the sequence. We have to do this four times before we&rsquo;re done: four times listing all the ways to order three things.</p>
+<p>Aha!</p>
+<p>The number of ways to order $4$ books is $4$ times the number of ways to order $3$ books. And the number of ways to order $3$ books is $3$ times the number of ways to order $2$ books. And the number of ways to order $2$ books is $2$ &ndash; or, put another way, $2$ times the number of ways to order $1$ book, which is $1$. So the number of ways to order $4$ books is $4$ times $3$ times $2$ times $1$.</p>
+<p>Here&rsquo;s another way to look at it: When ordering $4$ books, there are $4$ ways to pick what book comes first. Then there are $3$ books left, so there are $3$ ways to pick the next book in the lineup. Then from the remaining $2$ books there are $2$ ways to pick the next book, and then there&rsquo;s only $1$ book left to fill the last spot. So the total number of ways to order $4$ books is $4$ times $3$ times $2$ times $1$.</p>
+<p>There&rsquo;s a name for this special multiplication. It&rsquo;s called a factorial, and it&rsquo;s written like this:</p>
+<p>$$ 4! $$</p>
+<p>This is not a very excited $4$. It&rsquo;s just shorter way to write $4 \cdot 3 \cdot 2 \cdot 1$. Factorials are very useful when counting things, and they&rsquo;ll save us a lot of trouble in solving this problem. Here we go &ndash; Harry unwraps Super-Sam:</p>
+<p>First, there are $5$ choices for the first book. Then there are $4$ books remaining, so there are $4$ ways to pick the second book. Then there are $3$ ways to pick the third book, and $2$ ways to pick the fourth book, and then there&rsquo;s only one book left for the last position, for a grand total of</p>
+<p>$$ 5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 $$</p>
+<p>ways for Harry to arrange his new books.</p>
+<p>Thank goodness we didn&rsquo;t have to write out all those options.</p>
+<p>It turns out that we can follow this same process for any number of things that need to be ordered. If there are $n$ things, then there are $n$ ways to pick the first thing and $n-1$ ways to pick the second thing and so on, and when you multiply it all out you get a grand total of $n!$ ways to order them. That&rsquo;s something that definitely deserves an exclamation mark!</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

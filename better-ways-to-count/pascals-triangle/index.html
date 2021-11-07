@@ -1,0 +1,314 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Pascal's Triangle - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=alternate type=application/rss+xml href=/better-ways-to-count/pascals-triangle/index.xml title="Go Figure Math">
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class="main list" role=main>
+<header class=main__header>
+<h1 class=main__title>Pascal's Triangle</h1>
+</header>
+<div class="content main__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Pascal%e2%80%99s-Triangle-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>In the beginning, there was an infinitely long row of zeroes. And somewhere in the midst of these zeroes there was a lonely 1.</p>
+<p><img src=/img/Row-0-with-invisibles-cropped.png alt="Row 0 (with invisibles) cropped"></p>
+<p>To this long row was applied a certain rule:</p>
+<p><img src=/img/Rule-cropped.png alt="Rule cropped"></p>
+<p>The figure then looked like this.</p>
+<p><img src=/img/Rows-0-1-with-invisibles-cropped.png alt="Rows 0-1 (with invisibles) cropped"></p>
+<p>That wasn&rsquo;t exciting enough, so the rule was applied to the new row that had just been generated.</p>
+<p><img src=/img/Rows-0-2-with-invisibles-cropped.png alt="Rows 0-2 (with invisibles) cropped"></p>
+<p>Looking better. Now the rule again to the newest row:</p>
+<p><img src=/img/Rows-0-3-with-invisibles-cropped.png alt="Rows 0-3 (with invisibles) cropped"></p>
+<p>At this point, all those zeroes are getting in the way. So let&rsquo;s make them invisible.</p>
+<p><img src=/img/Rows-0-3-cropped.png alt="Rows 0-3 cropped"></p>
+<p>There, that&rsquo;s much easier to see. Remember, we haven&rsquo;t gotten rid of the zeroes; we&rsquo;ve just hidden them so we can focus on the interesting part.</p>
+<p>Continuing the pattern for a few more rows &ndash; with each number in the new row being the sum of the two numbers above it &ndash; we get:</p>
+<p><img src=/img/Rows-0-7-cropped.png alt="Rows 0-7 cropped"></p>
+<p>If we continue this on to infinity, we get a structure known as Pascal&rsquo;s Triangle.</p>
+<p><img src=/img/Rows-0-10-and-beyond-cropped.png alt="Rows 0-10 and beyond cropped"></p>
+<p>This curious construction has some very remarkable properties, as discovered by the French mathematician Blaise Pascal (for whom the triangle is named). Let&rsquo;s start with <a href=/better-ways-to-count/pascals-triangle/some-neat-features/ title="Some Neat Features">the basics&mldr;</a></p>
+</div>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

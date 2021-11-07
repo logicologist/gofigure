@@ -1,0 +1,534 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Posts - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=alternate type=application/rss+xml href=/posts/index.xml title="Go Figure Math">
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class="main list" role=main>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/counterfeit-detective/>
+<img src=/img/Counterfeit-Detective-scale-and-bags.png alt="Counterfeit Detective">
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/counterfeit-detective/ rel=bookmark>
+Counterfeit Detective
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2021-01-16T00:00:00Z>January 16, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+It was a dark and stormy night. Private detective Harriet Hesterton had been recruited by her colleague Mahmud Mufti to assist in a case. Some shadowy organization was making counterfeit coins and distributing them to conspiring (or coerced) store owners, who mixed them in with real coins to hide their tracks before giving them as change to customers. Harriet and Mahmud were at what they suspected was one such store.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/counterfeit-detective/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/the-magic-checkerboard/>
+<img src=/img/2-Cut-Lines.png alt="The Magic Checkerboard">
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/the-magic-checkerboard/ rel=bookmark>
+The Magic Checkerboard
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-07-11T00:00:00Z>July 11, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Two siblings, Janelle and Terrence, are visiting their friends Amy and Sarah. Terrence has just won a game of checkers against Amy for the second time in a row.
+&ldquo;Hey Sarah,&rdquo; Amy said. &ldquo;This checkerboard reminds me of the magic trick you showed me yesterday.&rdquo;
+&ldquo;Magic trick?&rdquo; asked Janelle.
+&ldquo;The one where you cut up the grid,&rdquo; Amy prompted her big sister. &ldquo;Let&rsquo;s show Terrence and Janelle!&rdquo;
+&ldquo;Okay,&rdquo; said Sarah, grinning.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/the-magic-checkerboard/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/an-interplanetary-currency/ rel=bookmark>
+An Interplanetary Currency
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-12-28T00:00:00Z>December 28, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+In the year 3187, space traveler Alex Ng stops to withdraw some money from her bank account in the standard interplanetary currency. Since extraterrestrials don&rsquo;t have five fingers, doing business in multiples of one, five, and ten Earth dollars doesn&rsquo;t really make sense, and neither does doing business in multiples of one, 17, and 68 Yrxiggian knuggyts. Instead, the interplanetary currency is called a blyp, and it comes in multiples of 1, 2, 4, 8, and so on: the powers of 2.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/an-interplanetary-currency/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/pirate-gold/ rel=bookmark>
+Pirate Gold
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-09-28T00:00:00Z>September 28, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+The five crew members of a small pirate ship have just completed a raid in another crew&rsquo;s territory, and they now have 100 gold coins to split among themselves.
+&ldquo;What a raid!&rdquo; says the captain Anastasia. &ldquo;Look at the feather in my hat &ndash; it&rsquo;s been torn to shreds.&rdquo;
+&ldquo;Aye,&rdquo; agrees the first mate Bartholomew. &ldquo;I have a new hole in my coat.&rdquo;
+&ldquo;Lucky my compass didn&rsquo;t get smashed while we were retreating back to sea,&rdquo; remarks the navigator Cornelius.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/pirate-gold/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/stargazing/>
+<img src=/img/Slide2.jpeg alt=Stargazing>
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/stargazing/ rel=bookmark>
+Stargazing
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-06-22T00:00:00Z>June 22, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Paula is re-doing her entryway, and she has decided to inlay a big star-shaped tile into the ceiling. She found a tilework company, Mort&rsquo;s Tilework, that can cut tile into complex shapes like the one she has in mind:
+Mort&rsquo;s Tilework has a seemingly simple pricing scheme for a tile order: $0.25 per square centimeter of area plus $0.10 per centimeter of perimeter. To place her order, Paula needs to send in both a schematic of her shape and her calculations for the area and perimeter of the shape.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/stargazing/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/a-magic-trick/ rel=bookmark>
+A Magic Trick
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-03-30T00:00:00Z>March 30, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Private detective Harriet Hesterton picked up the phone.
+&ldquo;Hi Detective Hesterton. This is Gus Spurious,&rdquo; said the voice on the other side.
+&ldquo;Good afternoon. Do you have another suspicious proof to examine?&rdquo; she replied, remembering their last conversation.
+&ldquo;No,&rdquo; said Gus. &ldquo;I have a magic trick I can&rsquo;t figure out. My friend Alina showed it to me and ever since then I&rsquo;ve been trying to understand how it works.&rdquo;
+&ldquo;Okay,&rdquo; Harriet told him, picking up a pen.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/a-magic-trick/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/moving-day/ rel=bookmark>
+Moving Day
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-01-05T00:00:00Z>January 5, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Leslie Armstrong runs a sporting goods store. Business has been good and the store needs to move to a larger space to accommodate all its customers. Leslie has hire five moving trucks &ndash; we can call them Trucks 1 through 5 &ndash; to transport all the supplies, and she is now deciding what trucks will carry what supplies.
+She has 9 identical basketballs in stock on moving day, as well as 61 volleyballs, 88 baseballs, and 323 golf balls.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/moving-day/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/bridging-the-gap/>
+<img src=/img/Slide05.jpeg alt="Bridging the Gap">
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/bridging-the-gap/ rel=bookmark>
+Bridging the Gap
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2018-09-29T00:00:00Z>September 29, 2018</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+The town of Isleton, renowned for its widespread decorative woodwork and fine cheeses, spans a cluster of four islands:
+a. Morton is a tour guide for the town, based on the east side of the south island (in the blue building). He advertises to tourists that his walking tour crosses every bridge in the city. To minimize the amount of walking on the tour, Morton decides he&rsquo;d like to plan the tour&rsquo;s path so it crosses each bridge exactly once, ideally starting and ending at the same location.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/bridging-the-gap/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/a-recurrence-riddle/ rel=bookmark>
+A Recurrence Riddle
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2018-06-16T00:00:00Z>June 16, 2018</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Two sisters, Amy and Sarah, are staying busy on a long car ride. Sarah is reading a book. Amy is poking her older sister and trying to start a conversation.
+To give Amy something to do, Sarah looks up from her book and says, &ldquo;Look &ndash; I&rsquo;ll give you a math puzzle, and once you get the answer, I&rsquo;ll put down the book and talk with you.&rdquo; Amy is up for the challenge and agrees.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/a-recurrence-riddle/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/a-triangle-of-prime-opportunity/>
+<img src=/img/PrimeTriangle.jpeg alt="A Triangle of Prime Opportunity">
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/a-triangle-of-prime-opportunity/ rel=bookmark>
+A Triangle of Prime Opportunity
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2018-03-24T00:00:00Z>March 24, 2018</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Suppose we have a triangle, and suppose we also draw its altitudes (that is, the heights if we treat each side length as the base):
+If the three side lengths and the three altitudes are all integers AND they&rsquo;re all different from each other, is it ever possible for four of the six numbers to be prime?
+Nicki and Dave disagree what the answer should be: Dave thinks it should be possible, while Nicki thinks it&rsquo;s probably impossible.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/a-triangle-of-prime-opportunity/>Read more…</a>
+</div>
+</article>
+</main>
+<div class=pagination>
+<span class="pagination__item pagination__item--current">1/3</span>
+<a class="pagination__item pagination__item--next btn" href=/posts/page/2/>»</a>
+</div>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

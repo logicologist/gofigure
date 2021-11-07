@@ -1,0 +1,327 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Path Counting - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Path Counting</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Path-Counting-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>In the city of Trafficville there is a region where all the streets are one-way. If a car drives into this region, it can only drive south or east. (It&rsquo;s really not very practical. The city council is debating what should be done about it.)</p>
+<p><img src=/img/Trafficville-Full-cropped.png alt="Trafficville Full cropped"></p>
+<p>Restaurant owner Rosa Gustaroni, who is going to work this morning, wants to drive from the bakery (at the green star) to her restaurant (at the orange star). How many ways can she get there? Which route is the shortest?</p>
+<p>In this problem, it&rsquo;s just as important to remember what we can&rsquo;t do as to remember what we can. The big limitation here is the bit about the one-way streets. It means Ms. Gustaroni can&rsquo;t do this:</p>
+<p><img src=/img/Trafficville-Doodling-cropped.png alt="Trafficville Doodling cropped"></p>
+<p>In fact, we can do even better. We know that she can&rsquo;t go on streets north or west of her house without driving the wrong way along a one-way street. And we also know that if she drives too far south or east, she won&rsquo;t be able to get back to the restaurant without taking a big detour. So we can simplify our diagram like so:</p>
+<p><img src=/img/Trafficville-Simplified-cropped.png alt="Trafficville Simplified cropped"></p>
+<p>Well now, that looks a lot more manageable.</p>
+<p>Now, if we look hard enough we discover a key point: whatever route Ms. Gustaroni takes, she has to go exactly four blocks east and exactly three blocks south. No more, no less. That makes a total of seven steps, always &ndash; and that answers one of the questions we are asked. There is no &ldquo;shortest&rdquo; route.</p>
+<p>What about the other question? How many ways are there to get from the bakery to the restaurant? We know that there will be seven total steps, and that three of them will be southward. Hey, this looks familiar &ndash; we&rsquo;re asked to pick three of the seven steps to be southward! We&rsquo;ve bumped into our old friend, <a href=/better-ways-to-count/on-choosing/ title="On Choosing">choosing</a>.</p>
+<p>$$ \dbinom{7}{3} = \dfrac{7!}{3!(7-3)!} = \dfrac{5040}{6\cdot 24} = 35 $$</p>
+<p>That means that there are $35$ ways for Ms. Gustaroni to drive from the bakery to the restaurant. (We&rsquo;d get the same answer if we&rsquo;d chosen the $4$ eastward steps &ndash; read more on <a href=/better-ways-to-count/on-choosing/ title="On Choosing">choosing</a> if you don&rsquo;t understand why.)</p>
+<p>Let&rsquo;s put a twist on this problem.</p>
+<p><img src=/img/Traffic-Accident-cropped.png alt="Traffic Accident cropped"></p>
+<p>There has been a traffic accident at the intersection where the red X is, and the police have blocked off the area so that cars must go around the accident. Rosa Gustaroni still needs to get to her restaurant from the bakery. Now how many ways are there for her to make the trip?</p>
+<p>Well, we could either do an awful lot of casework, or we could use a trick called complementary counting. In complementary counting, you count the total number of things, and then subtract the things you don&rsquo;t want. This problem has a pretty clear definition of what we don&rsquo;t want, and we already know the total number of things, so it seems like complementary counting is a good thing to try.</p>
+<p>Okay, so what exactly is a bad route? Clearly, it&rsquo;s one that goes through the blocked-off intersection. So we want to count how many paths go from the bakery to the intersection to the restaurant. That means we&rsquo;re really counting two things: 1) the number of paths from the bakery to the intersection, and 2) the number of paths from the intersection to the restaurant.</p>
+<p><img src=/img/Traffic-Avoidance-cropped.png alt="Traffic Avoidance cropped"></p>
+<p>Let&rsquo;s tackle these one at a time.</p>
+<ol>
+<li>To get from the bakery to the intersection, you have to take a total of three steps, two southward and one eastward. Choosing one eastward step out of three total steps:</li>
+</ol>
+<p>$$ \dbinom{3}{1} = \dfrac{3!}{1!(3-1)!} = \dfrac{6}{2} = 3. $$</p>
+<ol start=2>
+<li>To get from the intersection to the restaurant, you have to take a total of four steps, one southward and three eastward. Choosing three eastward steps out of four total steps:</li>
+</ol>
+<p>$$ \dbinom{4}{3} = \dfrac{4!}{3!(4-3)!} = \dfrac{24}{6} = 4. $$</p>
+<p>So there are $3$ ways to get from the bakery to the intersection, and $4$ ways to get from the intersection to the restaurant. Do these choices depend on each other in any way? No, so to get the total we multiply (because for each option of the first, all options of the second are possible). Then there are $3 \cdot 4 = 12$ bad routes.</p>
+<p>The total number of routes that Ms. Gustaroni could take, as we already calculated, is $35$. The number of bad routes, we just figured out, is $12$. So the number of good routes is</p>
+<p>$$ 35 - 12 = 23. $$</p>
+<p>So Rosa Gustaroni still has plenty of possible ways to get to work.</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

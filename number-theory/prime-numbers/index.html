@@ -1,0 +1,390 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Prime Numbers - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class="menu-item imhere">
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Prime Numbers</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Prime-Numbers-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>It&rsquo;s pretty simple to multiply two numbers and get another number.</p>
+<p>$$ 2 \times 3 = 6 $$</p>
+<p>Here&rsquo;s a question for you: What happens if we try to go the other way? For instance:</p>
+<p>$$ 15 = ? \times ? $$</p>
+<p>With a little thinking &ndash; remembering times tables, experimenting a bit &ndash; we can figure out the answer.</p>
+<p>$$ 15 = 3 \times 5 $$</p>
+<p>What we just did is called <em>factoring</em>. Instead of taking two little numbers and multiplying them to get a bigger number, we took a bigger number and broke it into two little numbers.</p>
+<p>Let&rsquo;s give this one a try:</p>
+<p>$$ 11 = ? \times ? $$</p>
+<p>No matter how hard we think, we can never come up with two smaller numbers that multiply to $11$. The best we can do is to say $11 = 1 \times 11$, but we didn&rsquo;t really break it down into anything smaller that way. When a number doesn&rsquo;t have any factors besides $1$ and itself, we call it a <em>prime number</em>. When we can break it up, we call it a <em>composite number</em>. $11$ is a prime number. $15$ is a composite number.</p>
+<p>Here&rsquo;s another one to try:</p>
+<p>$$ 24 = ? \times ? $$</p>
+<p>With a little thinking, we might come up with this:</p>
+<p>$$ 24 = 4 \times 6 $$</p>
+<p>But what happens if we go a step further? What if we tried to factor the factors?</p>
+<p>$$ 4 = ? \times ? $$</p>
+<p>$$ 6 = ? \times ? $$</p>
+<p>Try to solve this on your own first. I&rsquo;ll wait.</p>
+<p>&mldr;</p>
+<p>&mldr;</p>
+<p>&mldr;</p>
+<p>Got it? Here&rsquo;s the answer:</p>
+<p>$$ 4 = 2 \times 2 $$</p>
+<p>$$ 6 = 2 \times 3 $$</p>
+<p>So we can write 24 like so:</p>
+<p>$$ 24 = 2 \times 2 \times 2 \times 3 $$</p>
+<p>We can&rsquo;t break these factors down any more ($2$ and $3$ are prime), so that&rsquo;s as far as we can go.</p>
+<p>&ldquo;Wait a minute,&rdquo; you might say. &ldquo;I didn&rsquo;t get $24 = 4 \times 6$. I got $24 = 8 \times 3$ instead. Am I wrong?&rdquo;</p>
+<p>Good point. $24 = 4 \times 6$ isn&rsquo;t the only way we could have started factoring $24$. You&rsquo;re not breaking it apart wrong; you&rsquo;re just breaking it apart in a different way. So let&rsquo;s go down that path and see what we find.</p>
+<p>$$ 24 = 8 \times 3 $$</p>
+<p>$$ 8 = 4 \times 2 $$</p>
+<p>$$ 4 = 2 \times 2 $$</p>
+<p>We get:</p>
+<p>$$ 24 = (4 \times 2) \times 3 = (2 \times 2) \times 2 \times 3 $$</p>
+<p>$$ 24 = 2 \times 2 \times 2 \times 3 $$</p>
+<p>Hm, this is interesting&mldr;</p>
+<p>$$ 24 = 4 \times 6 = 2 \times 2 \times 2 \times 3 $$</p>
+<p>$$ 24 = 8 \times 3 = 2 \times 2 \times 2 \times 3 $$</p>
+<p>We get the same breakdown both times, even though we started in two different ways. Is this a coincidence?</p>
+<p>As it turns out, it&rsquo;s not. Anytime we break apart a composite number into its prime factors, no matter what path we take to get there, we&rsquo;ll always arrive at the same result. In other words, every composite number has a unique prime factorization. This fact is so important it&rsquo;s called the Fundamental Theorem of Arithmetic.</p>
+<p>Prime numbers are arguably the most fundamental building blocks of an area of math called number theory. But even as fundamental as they are, they&rsquo;re also surprisingly mysterious. They&rsquo;ve fascinated and puzzled people through the ages, and even today we don&rsquo;t know everything about them.</p>
+<p>Let&rsquo;s dive in and explore these special numbers. We&rsquo;ll start by asking: How do we find prime numbers? Can we make a list of them?</p>
+<p>Okay, let&rsquo;s try. We&rsquo;ll start at the beginning, at the number $1$. $1$ is funny &ndash; it&rsquo;s actually not a prime number. Remember, our definition says that a prime number&rsquo;s only factors are $1$ and itself, and &ldquo;$1$ and itself&rdquo; in this case means &ldquo;$1$ and $1$,&rdquo; which doesn&rsquo;t really fit the definition. It&rsquo;s not composite, but it&rsquo;s not prime either. So we leave out $1$ from our prime number list.</p>
+<p>Now $2$. $2$ is the first prime number. It&rsquo;s also the only even prime number. (Can you figure out why?) Then comes $3$, which is also prime. $4$ is not prime, since $4 = 2 \times 2$. But $5$ is a prime number: it&rsquo;s not divisible by any of the primes smaller than itself, so we can&rsquo;t break it up any further. $6$ is not prime, as we saw before: $6 = 2 \times 3$. But $7$ is prime; you can&rsquo;t factor out any $2$, $3$, or $5$ (the primes smaller than $7$). $8$ is not prime; it&rsquo;s divisible by $2$ as well. $9$ is not prime either, since $9 = 3 \times 3$. Neither is $10$, since it&rsquo;s also divisible by $2$.</p>
+<p>This is getting a little tiring. Every time we test a number to see if it&rsquo;s prime, we have to check all the prime numbers smaller than it to see if any of them are factors. We&rsquo;ve only checked the numbers up to $10$ so far, and we only have four primes: $2$, $3$, $5$, $7$. This might take an awfully long time if, for example, we were trying to see if $1,000,003$ is prime. There&rsquo;s got to be a better way to find prime numbers.</p>
+<p>Fortunately, we can take a couple of tactics to make our search easier. One way we can do this is by using what&rsquo;s called the Sieve of Eratosthenes, named after a fellow from ancient Greece. Here&rsquo;s how it works.</p>
+<p><img src=/img/Sieve-of-Eratosthenes-1.jpg alt="Sieve of Eratosthenes 1"></p>
+<p>We start with a grid of all the numbers we want to test. (We&rsquo;ll gray out $1$ because we already know it&rsquo;s not prime.) For now we&rsquo;ll just go up to $100$, though you can extend the grid as far as you want.</p>
+<p>We first circle the first prime number, which we already know is $2$:</p>
+<p><img src=/img/Sieve-of-Eratosthenes-2.jpg alt="Sieve of Eratosthenes 2"></p>
+<p>Now we count off every other number, shading them because we know they&rsquo;re divisible by $2$ but they&rsquo;re bigger than $2$:</p>
+<p><img src=/img/Sieve-of-Eratosthenes-3.jpg alt="Sieve of Eratosthenes 3"></p>
+<p>Right after $2$ is a number we haven&rsquo;t shaded: $3$. We circle this prime:</p>
+<p><img src=/img/Sieve-of-Eratosthenes-4.jpg alt="Sieve of Eratosthenes 4"></p>
+<p>And then we shade every third number, thus eliminating all composite numbers divisible by $3$. We might run into a number that&rsquo;s already grayed out, and that&rsquo;s fine &ndash; it&rsquo;s already been marked composite, and composite it shall stay.</p>
+<p><img src=/img/Sieve-of-Eratosthenes-5.jpg alt="Sieve of Eratosthenes 5"></p>
+<p>The number right after $3$ is grayed out, which means we&rsquo;ve marked it as composite. (And it&rsquo;s just as we expected, since $4 = 2 \times 2$.) So we skip over it and head to the next open number: $5$. We do the same thing, circling it and shading all its multiples.</p>
+<p><img src=/img/Sieve-of-Eratosthenes-7.jpg alt="Sieve of Eratosthenes 7"></p>
+<p>Onward we go. $6$ is grayed out, so we skip it and go to $7$. As before, we circle the prime and shade its multiples.</p>
+<p><img src=/img/Sieve-of-Eratosthenes-9.jpg alt="Sieve of Eratosthenes 9"></p>
+<p>Now we skip over $8$, $9$, and $10$, and find that the next prime is $11$:</p>
+<p><img src=/img/Sieve-of-Eratosthenes-11.jpg alt="Sieve of Eratosthenes 11"></p>
+<p>We could keep going like this all the way to $100$. (If we were using a bigger grid, we could go even further.) The composite numbers fall through the Sieve, and what we have left over &ndash; the circled numbers &ndash; are our primes.</p>
+<p><img src=/img/Sieve-of-Eratosthenes-12.jpg alt="Sieve of Eratosthenes 12"></p>
+<p>But we can make this process even easier! At some point in our Sieve-making, the step of shading all the multiples of the current prime became trivial. Past $50$, all the next multiples of our primes were past the end of the sieve. So once we hit that halfway point, we could just stop and circle all the surviving numbers. We can do even better than that, though: we only need to check numbers up to the square root of the size of the sieve. (Read that again, slowly, and try to figure out why it&rsquo;s true. Hint: look what happened when we marked the multiples of $11$.)</p>
+<p>Anyway, here&rsquo;s the resulting list of primes less than $100$:</p>
+<p>$$ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 $$</p>
+<p>The list proceeds in skips and hops of irregular length. There&rsquo;s no clear pattern to the primes &ndash; we can only guess where exactly the next one might land.</p>
+<p>For that matter, how do we know for certain there&rsquo;s a &ldquo;next one&rdquo; at all? Might the list just stop at some point? Is there a biggest prime? After all, it makes intuitive sense that primes should become scarcer as they get bigger.</p>
+<p>It turns out that there are an infinite number of primes: there is no &ldquo;biggest&rdquo; one, because if there were, you could always find one that&rsquo;s bigger. We can prove it, too!</p>
+<p>We&rsquo;ll start by assuming that there&rsquo;s a biggest prime, so that if we make a list of all the primes we&rsquo;ll eventually get to the end. Now let&rsquo;s use this list to build an even bigger number that has to be prime. What we&rsquo;ll do is multiply all the primes in our list together, and then add $1$. This new (huge) number isn&rsquo;t divisible by $2$, because it&rsquo;s $1$ more than a multiple of $2$; it&rsquo;s not divisible by $3$, because it&rsquo;s $1$ more than a multiple of $3$; it&rsquo;s not divisible by $5$, because it&rsquo;s $1$ more than a multiple of $5$; and so on through all the primes on our list, all the way up to the biggest prime. Therefore, our new huge number must be prime. But that makes no sense! We assumed there were no primes bigger than the last prime on our list, and now we&rsquo;ve contradicted ourselves by saying there&rsquo;s something bigger than the biggest. So our assumption must be wrong. There is no biggest prime.</p>
+<p>&ldquo;Okay,&rdquo; you might say. &ldquo;So we can just use this method to keep generating more primes, right? We can start with, say, $(2 \times 3 \times 5) + 1$, and calculate it out to $31$, and hey presto, it&rsquo;s prime!&rdquo;</p>
+<p>Not necessarily. The numbers you&rsquo;re talking about, where you multiply the first $n$ primes and then add $1$, are called Euclid numbers, and they&rsquo;re not always prime (though they certainly can be, as in your example).</p>
+<p>&ldquo;Why not? Isn&rsquo;t that what we did in our proof just now? We built a Euclid number and knew it had to be prime?&rdquo;</p>
+<p>Well, not quite. See, we only knew our new huge number was prime because we assumed that we knew what the biggest prime in the world was. But now we know that our assumption was false. So if there&rsquo;s another prime between our &ldquo;biggest prime&rdquo; and our Euclid number, it could potentially gum up the works. Just say we multiply all the primes up to $13$ and make a Euclid number from that:</p>
+<p>$$ (2 \times 3 \times 5 \times 7 \times 11 \times 13) + 1 = 30030 + 1 = 30031 $$</p>
+<p>But $30031$ is not prime: $30031 = 59 \times 509$. This is an example where two primes ($59$ and $509$) between our &ldquo;biggest prime&rdquo; ($13$) and our Euclid number ($30031$) happened to be factors of our Euclid number.</p>
+<p>&ldquo;Okay,&rdquo; you reply. &ldquo;So that algorithm doesn&rsquo;t always give us primes. Is there some other algorithm that will?&rdquo;</p>
+<p>This is a very good question, and one that has baffled mathematicians for years. There have been many valiant attempts at solving this conundrum.</p>
+<p>For instance, a mathematician named Pierre de Fermat came up with this formula:</p>
+<p>$$ 2^{2^n} + 1 $$</p>
+<p>Fermat thought that this formula would always result in primes, no matter what $n$ you stuck into it. And the first four Fermat numbers, as they&rsquo;re called, are indeed prime. (This was back in the days before calculators, so Fermat figured that all out on paper, which was a big deal.) But the formula breaks down at $n = 5$:</p>
+<p>$$ 2^{2^5} + 1 = 2^32 + 1 = 4294967297 = 641 \times 6700417 $$</p>
+<p>In fact, all the Fermat numbers bigger than this that we&rsquo;ve calculated so far have been composite. So that didn&rsquo;t work.</p>
+<p>Another such formula is this one, invented by a person named Marin Mersenne:</p>
+<p>$$ 2^n - 1 $$</p>
+<p>Numbers in this form are called Mersenne numbers, and if a Mersenne number is prime it&rsquo;s called a Mersenne prime. The first few Mersenne primes are $3$, $7$, $31$, and $127$.</p>
+<p>Not every $n$ that we plug into the formula will result in a prime number. But it turns out we can be even more specific: if $n$ is composite, then $2^n - 1$ must also be composite. Does that mean that plugging in a prime $n$ will give us a prime Mersenne number? No, not always. If we let $n = 11$, for example, then we get</p>
+<p>$$ 2^n - 1 = 2^{11} - 1 = 2047 = 23 \times 89 $$</p>
+<p>So a prime $n$ doesn&rsquo;t guarantee a Mersenne prime. Nevertheless, Mersenne primes are still very important &ndash; most record-breaking prime numbers are Mersenne primes. The biggest number so far that we know to be a prime is</p>
+<p>$$ 2^{57,885,161} - 1 $$</p>
+<p>That is an absolutely ginormous Mersenne prime. When you calculate it out, it has over $17$ <em>million</em> digits. Just to get a sense for how ginormous that is, the number of atoms in the observable universe has about $80$ digits.</p>
+<p>The distribution of prime numbers is still at the cutting edge of mathematics today. The most recent development in the quest to find a formula for them is called the Riemann hypothesis, which is one of the greatest unsolved problems in mathematics today. The Riemann hypothesis basically says that the numbers that make a certain function equal to zero all have to be in the form $\frac{1}{2} + t\sqrt{-1}$ (for some $t$); these numbers can then be used in another formula that tells how many prime numbers are less than any given number. It might sound a bit roundabout, but if it&rsquo;s proven, the Riemann hypothesis would give us a way to predict the distribution of prime numbers with remarkable accuracy. So far it&rsquo;s been over $150$ years, and nobody&rsquo;s proven it yet!</p>
+<p>Prime numbers, those that can&rsquo;t be broken down into smaller factors, are simple to start playing with but intriguingly complex to fully master. Who knows &ndash; maybe you&rsquo;ll be the next one to discover something new about these enigmatic numbers!</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

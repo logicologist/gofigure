@@ -1,0 +1,328 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Fibonacci Rabbits - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class="menu-item imhere">
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Fibonacci Rabbits</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Fibonacci-Rabbits-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>Let&rsquo;s talk about rabbits. Specifically, let&rsquo;s investigate a biologically unrealistic rabbit population that is multiplying like&mldr; well, rabbits.</p>
+<p>Every month, the following rule is applied: - Each pair of adults produces a new pair of baby rabbits. - Each pair of baby rabbits matures into a pair of adults.</p>
+<p>We can abbreviate these rules by using &ldquo;W&rdquo; for a pair of adult rabbits and &ldquo;w&rdquo; for a pair of baby rabbits (&ldquo;w&rdquo; signifying two pairs of rabbit ears, of course).</p>
+<p><img src=/img/Rule-cropped.png alt="Rule cropped"></p>
+<p>The population starts with a single pair of baby rabbits. The question we want to explore is this: As the months go by, how does the rabbit population grow?</p>
+<p>Let&rsquo;s compute the rabbit population for the first few months and see if we can see a pattern. Looking for patterns is very useful in math &ndash; it can help show us where to investigate a problem further.</p>
+<p>At the first month, we are told, there is one pair of baby rabbits.</p>
+<p><img src=/img/Gen-1.png alt="Gen 1"></p>
+<p>At the second month, the baby rabbits have grown into adults. One pair still.</p>
+<p><img src=/img/Gen-2.png alt="Gen 2"></p>
+<p>At the third month, the first pair has produced a pair of baby rabbits. Two pairs total.</p>
+<p><img src=/img/Gen-3.png alt="Gen 3"></p>
+<p>At the fourth month, the adult pair has produced another baby pair, and the previous baby pair has grown up. Three pairs.</p>
+<p><img src=/img/Gen-4.png alt="Gen 4"></p>
+<p>At the fifth month, both adult pairs have generated baby pairs, and the previous baby pair has grown up. Five pairs.</p>
+<p><img src=/img/Gen-5.png alt="Gen 5"></p>
+<p>One more time: At the sixth month, all three adult pairs generate baby pairs, and both baby pairs grow up, and we have eight pairs.</p>
+<p><img src=/img/Gen-6.png alt="Gen 6"></p>
+<p>Putting all this together, we can count the number of rabbit pairs in each generation:</p>
+<p><img src=/img/Gen-1-6-cropped.png alt="Gen 1-6 cropped"></p>
+<p>$1, 1, 2, 3, 5, 8$ &ndash; you recognize that number sequence?</p>
+<p>But why are the <a href=/natures-favorite-math/fibonacci-numbers/ title="Fibonacci Numbers">Fibonacci numbers</a> appearing here? And does this pattern continue on forever?</p>
+<p>Let&rsquo;s investigate this problem a little more deeply. In order to answer our questions, we&rsquo;ll need to look at the problem a little differently. We&rsquo;ll need to use the fact that each generation consists of some number of pairs of adult rabbits and some number of pairs of baby rabbits. Those are the only categories, and they don&rsquo;t overlap, so we can find the total number of rabbit pairs by adding the number of adult pairs and the number of baby pairs.</p>
+<p>Let&rsquo;s start with the adult pairs. What do we know about adult rabbits? Well, we know that they&rsquo;re adults, so by definition they must have had time to grow up. Specifically, we know that they must have been around for at least one month. For example, all the adult rabbits in Generation 6 below had to have existed in Generation 5.</p>
+<p><img src=/img/Arrows-adult-rabbits-cropped.png alt="Arrows - adult rabbits cropped"></p>
+<p>But when we draw it out like this, we see something else as well: Every rabbit pair in Generation 5 is an adult by Generation 6. Either it&rsquo;s an adult pair that&rsquo;s going to still be an adult pair, or it&rsquo;s a baby pair that&rsquo;s going to grow up to be an adult pair. And here we realize something important: This one-to-one correspondence, as it&rsquo;s called, means that we can count the number of pairs of adult rabbits in Generation 6 by counting the total number of rabbit pairs in Generation 5.</p>
+<p>Okay, that&rsquo;s very convenient. Now what about the baby rabbit pairs? They haven&rsquo;t existed for a whole generation, but they&rsquo;re not some random number dropped out of the blue. Remember our rule:</p>
+<p><img src=/img/Rule-1.png alt="Rule 1"></p>
+<p>It tells us that each baby pair comes from an adult pair in the generation before it. And we also know that every adult pair in that generation before is going to produce a baby pair in the next generation. So we can count the number of baby pairs in any generation by the number of adult pairs in the previous generation. And how do we count the number of adult pairs in any generation? We just figured this out &ndash; we count the total number of rabbit pairs in the generation before! So we can count the number of baby rabbit pairs in some generation by counting the total number of rabbit pairs two generations before.</p>
+<p><img src=/img/Arrows-baby-rabbits-cropped.png alt="Arrows - baby rabbits cropped"></p>
+<p>Okay, so we count the number of <em>adult</em> rabbit pairs by counting the total number of rabbit pairs <em>one</em> generation before, and we count the number of <em>baby</em> rabbit pairs by counting the total number of pairs <em>two</em> generations before, so to find the total number of rabbit pairs we add those two categories. And we end up adding two consecutive generations to get the next one. There&rsquo;s our Fibonacci recursion! That&rsquo;s why we were seeing that pattern! And because we started with $1+1$, we&rsquo;re going to keep getting Fibonacci numbers for however many months we choose.</p>
+<p>This sort of Fibonacci recursion appears in lots of surprising places. More problems coming soon!</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

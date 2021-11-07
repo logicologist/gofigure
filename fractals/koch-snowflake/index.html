@@ -1,0 +1,334 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Koch Snowflake - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=alternate type=application/rss+xml href=/fractals/koch-snowflake/index.xml title="Go Figure Math">
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class="main list" role=main>
+<header class=main__header>
+<h1 class=main__title>Koch Snowflake</h1>
+</header>
+<div class="content main__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Koch-Snowflake-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>The Koch Snowflake is a <a href=/fractals/ title=Fractals>fractal</a> based on a very simple rule.</p>
+<p><span style=text-decoration:underline>The Rule</span>: Whenever you see a straight line, like the one on the left, divide it in thirds and build an equilateral triangle (one with all three sides equal) on the middle third, and erase the base of the equilateral triangle, so that it looks like the thing on the right.</p>
+<p><img src=/img/Koch-Snowflake-Rule.png alt="Koch Snowflake Rule"></p>
+<p>The Koch Snowflake happens when we repeat this process indefinitely on an equilateral triangle. (You could try this on other shapes, too, but I&rsquo;ll leave those variations for you to explore.) Let&rsquo;s walk through the steps.</p>
+<p><img src=/img/Koch-snowflake-base-case.png alt="Koch snowflake base case"></p>
+<p>We start with this triangle. Now for each of the three sides, we apply The Rule, so it becomes a 6-pointed star. (The new lines that we just added are in red.)</p>
+<p><img src=/img/Koch-snowflake-after-1-iteration-with-red.png alt="Koch snowflake after 1 iteration (with red)"></p>
+<p>Then for each side of the 6-pointed star, we apply The Rule again, so it looks like this.</p>
+<p><img src=/img/Koch-snowflake-after-2-iterations-with-red.png alt="Koch snowflake after 2 iterations (with red)"></p>
+<p>After we apply The Rule again to the result it starts to look much more like a snowflake.</p>
+<p><img src=/img/Koch-snowflake-after-3-iterations-with-red.png alt="Koch snowflake after 3 iterations (with red)"></p>
+<p>And we can keep going &ndash; here&rsquo;s the next iteration. (I&rsquo;ll drop the red coloring now that you get the idea.)</p>
+<p><img src=/img/Koch-snowflake-after-4-iterations.png alt="Koch snowflake after 4 iterations"></p>
+<p>And if we continue this on to infinity, we get the Koch Snowflake.</p>
+<p><img src=/img/Koch-snowflake.png alt="Koch snowflake"></p>
+<p>Well, this is a very pretty thing. It looks like the most intricate snowflake that ever fell out of the sky.</p>
+<p>Here&rsquo;s an interesting question: What is the perimeter of the Koch Snowflake? In other words, if you were a bug and you wanted to walk along all those squiggles, how far would you have to travel?</p>
+<p>To answer that, let&rsquo;s look back at our Rule for a moment.</p>
+<p><img src=/img/Koch-Snowflake-Rule.png alt="Koch Snowflake Rule"></p>
+<p>Every time we apply The Rule to a line segment, we&rsquo;re replacing that segment with $4$ little segments each $\frac{1}{3}$ the length of the original. That means we&rsquo;re multiplying the length of the segment by $\frac{4}{3}$. If we do this for all the line segments in the snowflake, the net effect is to multiply the entire perimeter by $\frac{4}{3}$. Intuitively, we can see that the perimeter is going to become infinitely squiggly, and that a bug walking along it would need to travel an infinite distance. (That would literally take forever!) If we want to prove it, we can walk through the following logic:</p>
+<ul>
+<li>Our original triangle had some side length, which we can call $s$.</li>
+<li>Since all three sides were the same length, the triangle&rsquo;s perimeter was $3 \cdot s$.</li>
+<li>When we applied The Rule once, we replaced each line segment with $4$ little segments each $\frac{1}{3}$ the original length, which means we multiplied the length of each segment by $\frac{4}{3}$.</li>
+<li>That made the snowflake&rsquo;s perimeter $3 \cdot s \cdot \frac{4}{3}$.</li>
+<li>When we applied The Rule a second time, we again multiplied the perimeter by $\frac{4}{3}$.</li>
+<li>That made the snowflake&rsquo;s perimeter $3 \cdot s \cdot \frac{4}{3} \cdot \frac{4}{3}$ , which equals $3 \cdot s \cdot \left(\frac{4}{3}\right)^2$.</li>
+<li>When we applied The Rule a third time, we again multiplied the perimeter by $\frac{4}{3}$.</li>
+<li>That made the snowflake&rsquo;s perimeter $3 \cdot s \cdot \left(\frac{4}{3}\right)^3$​.</li>
+<li>In general, if we apply The Rule $n$​ times, the snowflake&rsquo;s perimeter will be $3 \cdot s \cdot \left(\frac{4}{3}\right)^n$​.</li>
+<li>Since $\frac{4}{3}$​ is bigger than 1, as $n$​ gets bigger and bigger off to infinity, $\left(\frac{4}{3}\right)^n$​ gets bigger and bigger off to infinity as well, which means the perimeter of the snowflake really is infinite.</li>
+</ul>
+<p>So the perimeter of the Koch Snowflake is infinite. This fact is really mind-boggling when you consider that the Koch Snowflake has a finite area. You could build a fence around it like the picture below:</p>
+<p><img src=/img/Koch-Snowflake-Fence.png alt="Koch Snowflake Fence"></p>
+<p>But you could never build a fence that traces its perimeter exactly.</p>
+<p>If we&rsquo;re very careful and clever about it, we can actually calculate the area of the Koch Snowflake. (If you&rsquo;re curious, the derivation is <a href=/fractals/koch-snowflake/koch-snowflake-area/ title="Koch Snowflake Area">here</a>.) It turns out that if we start with a triangle with side length $s$, the area of the snowflake is</p>
+<p>$$ \dfrac{2s^2\sqrt{3}}{5} $$</p>
+<p>The important part, though, is the idea of infinite squiggles all crumpled up in a finite space: infinite perimeter, finite area. This infinite detail is characteristic of fractals; it&rsquo;s fascinating and mind-blowing. If you&rsquo;d like to explore more fractals, there are more listed <a href=/fractals/ title=Fractals>here</a>!</p>
+</div>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

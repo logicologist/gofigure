@@ -1,0 +1,340 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Sierpinski - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class="menu-item imhere">
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Sierpinski</h1>
+</header><div class="content post__content clearfix">
+<div class=print-friendly>
+<a href=/doc/Sierpinski-printer-friendly.pdf>→ Print-friendly version</a>
+</div>
+<p>The Sierpinski Triangle is a <a href=/fractals/ title=Fractals>fractal</a> named after a Polish mathematician named Wacław Sierpinski, who is best known for his work in an area of math called set theory. Here&rsquo;s how it works. We start with an equilateral triangle, which is one where all three sides are the same length:</p>
+<p><img src=/img/Sierpinski-Triangle-iteration-0.png alt="Sierpinski Triangle iteration 0"></p>
+<p>Now we repeat the following rule on this triangle indefinitely:</p>
+<p><span style=text-decoration:underline>The Rule</span>: Whenever you see an equilateral triangle, like the one below on the left, chop it up into four little equilateral triangles, and get rid of the middle upside-down triangle, so you&rsquo;re left with the thing on the right.</p>
+<p><img src=/img/Sierpinski-Triangle-Rule.png alt="Sierpinski Triangle Rule"></p>
+<p>Now let&rsquo;s try it for our beginning triangle. First, we apply The Rule once:</p>
+<p><img src=/img/Sierpinski-Triangle-iteration-1.png alt="Sierpinski Triangle iteration 1"></p>
+<p>Now for each of those little gray triangles we have left, we&rsquo;ll apply The Rule again:</p>
+<p><img src=/img/Sierpinski-Triangle-iteration-2.png alt="Sierpinski Triangle iteration 2"></p>
+<p>And we&rsquo;re left with more little gray triangles, so we can apply The Rule again:</p>
+<p><img src=/img/Sierpinski-Triangle-iteration-3.png alt="Sierpinski Triangle iteration 3"></p>
+<p>And we&rsquo;ll always keep getting smaller and smaller gray triangles, so we can keep doing this for as long as we want, even off to infinity:</p>
+<p><img src=/img/Sierpinski-Triangle-iteration-4.png alt="Sierpinski Triangle iteration 4"></p>
+<p> </p>
+<p><img src=/img/Sierpinski-Triangle-iteration-5.png alt="Sierpinski Triangle iteration 5"></p>
+<p> </p>
+<p><img src=/img/Sierpinski-Triangle-iteration-6.png alt="Sierpinski Triangle iteration 6"></p>
+<p> </p>
+<p><img src=/img/Sierpinski-Triangle-iteration-7.png alt="Sierpinski Triangle iteration 7"></p>
+<p>There we have it. That&rsquo;s the Sierpinski Triangle.</p>
+<p>To get to know the Sierpinski Triangle better, here&rsquo;s some food for thought:</p>
+<ul>
+<li>When we applied The Rule for the first time, we started with one triangle and ended up with three. How many little triangles do we have after applying The Rule 2 times? 3 times? 20 times? $n$ times?</li>
+<li>We keep chopping little pieces out of the triangle every time we apply The Rule. If we keep doing this forever, what&rsquo;s left? In other words, what&rsquo;s the area of the Sierpinski Triangle?</li>
+</ul>
+<p>Now, Sierpinski didn&rsquo;t stop at the triangle. He extended this concept of chopping up and taking away, and he applied it to a square. Here&rsquo;s the Rule: Whenever you see a square, break it into nine smaller squares and remove the middle one.</p>
+<p><img src=/img/Sierpinski-Carpet-Rule.png alt="Sierpinski Carpet Rule"></p>
+<p>You&rsquo;re left with eight smaller squares, so you can apply the Rule again to each one.</p>
+<p><img src=/img/Sierpinski-Carpet-iteration-2.png alt="Sierpinski Carpet iteration 2"></p>
+<p>And, again, we can keep doing this as long as we want.</p>
+<p><img src=/img/Sierpinski-Carpet-iteration-3.png alt="Sierpinski Carpet iteration 3"></p>
+<p> </p>
+<p><img src=/img/Sierpinski-Carpet-iteration-4.png alt="Sierpinski Carpet iteration 4"></p>
+<p> </p>
+<p><img src=/img/Sierpinski-Carpet-iteration-5.png alt="Sierpinski Carpet iteration 5"></p>
+<p>This is called the Sierpinski Carpet.</p>
+<p>But that&rsquo;s not all you can do with this concept! You can also take it into three dimensions. Take, for instance, a tetrahedron:</p>
+<p><img src=/img/Starting-Tetrahedron.png alt="Starting Tetrahedron"></p>
+<p>We can chop this tetrahedron up so we have three little tetrahedra and a gap in the middle.</p>
+<p><img src=/img/Steps-1-and-2.png alt="Steps 1 and 2"></p>
+<p><em><a href=http://mathforum.org/advanced/robertd/tetrahedron.html>Image</a> by <a href=http://mathforum.org/advanced/robertd/index.html>Robert Dickau</a></em></p>
+<p>This is a really cool variation to try to build yourself! Here&rsquo;s an interesting question to think about: When we chop out the middle of the tetrahedron, what&rsquo;s the shape of the piece we&rsquo;re getting rid of? (Hint: This time, it&rsquo;s not just another little tetrahedron!)</p>
+<p>What if we tried extending the Sierpinski Carpet into three dimensions, too, so we&rsquo;re chopping up a cube? What might that look like? Take a guess, and then look up the Menger sponge. (Yes, <em>Menger</em>&mldr; not Sierpinski. On the matter of shape-chopping, a mathematician named Karl Menger picked up where Sierpinski left off.)</p>
+<p>How else might you extend Sierpinski&rsquo;s chopping-up concept?</p>
+</div>
+</article>
+</main>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Posts - Go Figure Math</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=alternate type=application/rss+xml href=/posts/index.xml title="Go Figure Math">
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-62255959-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class="logo logo--mixed">
+<a class=logo__link href=/ title=" " rel=home>
+<div class="logo__item logo__imagebox">
+<img class=logo__img src=/img/Letterform-Official-Improved-website-header.png>
+</div><div class="logo__item logo__text">
+<div class=logo__title> </div>
+<div class=logo__tagline> </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ol class=menu-list>
+<li class=menu-item>
+<a class=menu-link href=/>
+<span class=menu-text>
+First Stop
+</span>
+</a>
+</li>
+<li class="menu-item imhere">
+<a class=menu-link href=/posts/>
+<span class=menu-text>
+Posts
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/>
+<span class=menu-text>
+Better Ways To Count
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/factorials/>
+<span class=menu-text>
+Factorials!
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/on-choosing/>
+<span class=menu-text>
+On Choosing
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/path-counting/>
+<span class=menu-text>
+Path Counting
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/>
+<span class=menu-text>
+Pascal's Triangle
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/some-neat-features/>
+<span class=menu-text>
+Some Neat Features
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/better-ways-to-count/pascals-triangle/choosing-a-route/>
+<span class=menu-text>
+Choosing a Route
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/>
+<span class=menu-text>
+Fractals
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/fractals/sierpinski/>
+<span class=menu-text>
+Sierpinski
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/fractals/koch-snowflake/>
+<span class=menu-text>
+Koch Snowflake
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/>
+<span class=menu-text>
+Number Theory
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/prime-numbers/>
+<span class=menu-text>
+Prime Numbers
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/number-theory/to-infinity-and-beyond/>
+<span class=menu-text>
+To Infinity… And Beyond!
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/>
+<span class=menu-text>
+Nature's Favorite Math
+&nbsp;v
+</span>
+</a>
+<ol class=sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/>
+<span class=menu-text>
+Fibonacci Numbers
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-in-nature/>
+<span class=menu-text>
+Fibonacci in Nature
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-number-patterns/>
+<span class=menu-text>
+Fibonacci Number Patterns
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/fibonacci-numbers/fibonacci-rabbits/>
+<span class=menu-text>
+Fibonacci Rabbits
+</span>
+</a>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/>
+<span class=menu-text>
+The Golden Ratio
+&nbsp;>
+</span>
+</a>
+<ol class=sub-sub-menu>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/a-surprising-connection/>
+<span class=menu-text>
+A Surprising Connection
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/natures-favorite-math/the-golden-ratio/the-golden-angle/>
+<span class=menu-text>
+The Golden Angle
+</span>
+</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/contact/>
+<span class=menu-text>
+Contact
+</span>
+</a>
+</li>
+<li class=menu-item>
+<a class=menu-link href=/subscribe/>
+<span class=menu-text>
+Subscribe
+</span>
+</a>
+</li>
+</ol>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class="main list" role=main>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/spider-socks/ rel=bookmark>
+Spider Socks
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2017-12-30T00:00:00Z>December 30, 2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Harvey the Spider is putting on his argyle socks and boots in the morning. Naturally, he has 8 socks and 8 boots to put on, and for every one of his 8 legs, he has to put the sock on before the boot.
+Let&rsquo;s number Harvey&rsquo;s feet 1 through 8, call the argyle sock for his $i\textrm{th}$ foot $A_i$, and call the boot for his $i\textrm{th}$ foot $B_i$. Then one valid order Harvey could use for putting on socks and boots is
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/spider-socks/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/duo-dominoes/>
+<img src=/img/Better-Domino.png alt="Duo Dominoes">
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/duo-dominoes/ rel=bookmark>
+Duo Dominoes
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2017-09-23T00:00:00Z>September 23, 2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Paula would like to re-tile the hallway with those nice domino-shaped tiles she discovered while redoing the kitchen. The tiles are 1x2, and the hallway is just wide enough for one of these tiles to fit horizontally.
+Paula knows she doesn&rsquo;t have to tile the hallway all the way to the back of the house, since the carpet from the den can stretch across some portion of the hallway; she hasn&rsquo;t decided exactly how long the tiling will be, though.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/duo-dominoes/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/pennies/>
+<img src=/img/Cluster.jpg alt=Pennies>
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/pennies/ rel=bookmark>
+Pennies
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2017-06-24T00:00:00Z>June 24, 2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Suppose you have 8 pennies, and you arrange 7 of them in a cluster like this:Now suppose you take the eighth penny and place it at the top:
+And then you roll it around the outside of the cluster, never letting it slide and always staying in contact with the cluster:
+Viewing the whole scenario from above, how many 360-degree rotations does the outer penny make during one trip around the central cluster?
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/pennies/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/swans/ rel=bookmark>
+Swans
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2017-03-25T00:00:00Z>March 25, 2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+A flock of $n$ swans is sitting peacefully on a pond. Then, suddenly, one of the swans hears something in a bush at the water&rsquo;s edge, and it takes off and flies away.
+Suppose that if $k$ swans have flown away, the probability of another swan subsequently joining them is $1-\frac{1}{k+3}$ (so the more swans fly, the more likely it is that more swans fly also). What is the probability that the entire flock of $n$ swans flies away once the first one takes off?
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/swans/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/city-council/ rel=bookmark>
+City Council
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2016-12-31T00:00:00Z>December 31, 2016</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+A certain city is entirely inhabited by knights and liars. Knights, consistently chivalrous, always tell the truth. Liars, on the contrary, never tell the truth. One can never tell whether a citizen is a knight or a liar just by their appearance.
+The city council, recently elected, is composed of twelve of the city&rsquo;s most eminent inhabitants. One day they come together to a council meeting. They all recognize each other and know which members of the group are knights and which are liars.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/city-council/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/cut-corners/>
+<img src=/img/Plain-Grid.png alt="Cut Corners">
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/cut-corners/ rel=bookmark>
+Cut Corners
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2016-09-17T00:00:00Z>September 17, 2016</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Paula is re-doing the floor tiling in the kitchen. The space is shaped like an 8x8 square, except that one corner is missing to make room for the refrigerator and the opposite corner is missing to leave space for the dishwasher.
+Paula found a domino-shaped (1x2) tile she&rsquo;d like to use to tile the space:
+How many ways are there for her to tile the kitchen with this shape?
+The solution can be found here.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/cut-corners/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/troll-trouble/ rel=bookmark>
+Troll Trouble
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2016-05-21T00:00:00Z>May 21, 2016</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+You have been captured by an evil troll. The troll doesn&rsquo;t have much to do besides capture people, so to amuse itself it&rsquo;s made a bargain with you: you are to play a certain game with the troll, and if you win, you go free.
+The game starts with a pile of 50 pebbles. Players take turns removing either 1 or 2 pebbles from the pile. The player to take away the last pebble from the pile loses the game.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/troll-trouble/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<figure class=list__thumbnail>
+<a href=/posts/leapfrog/>
+<img src=/img/Sample-Leaps-4.jpg alt=Leapfrog>
+</a>
+</figure>
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/leapfrog/ rel=bookmark>
+Leapfrog
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2016-03-19T00:00:00Z>March 19, 2016</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Three frogs are sitting on the coordinate plane: one at (0, 0), one at (1, 0), and one at (0, 1). They play a game of leapfrog such that whenever one frog hops over another, the leapee is at the midpoint of where the leaper leaped from and where the leaper landed. For example, here are two valid leaps in the game: (0, 0) to (2, 0) and then (0, 1) to (4, -1).
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/leapfrog/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/a-phony-proof/ rel=bookmark>
+A Phony Proof
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-12-19T00:00:00Z>December 19, 2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Private detective mathematician Harriet Hesterton was sitting calmly at her desk one day absently flipping through case files when her phone rang.
+&ldquo;My name is Gus Spurious,&rdquo; said the voice on the other end, &ldquo;and I have a problem. See, I was playing with a bit of algebra the other day, and I proved something that just looks completely wrong. I might&rsquo;ve just made a breakthrough that changes the face of mathematics, but I can&rsquo;t figure out how my result could be true!
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/a-phony-proof/>Read more…</a>
+</div>
+</article>
+<article class="list__item post">
+<header class=list__header>
+<h2 class="list__title post__title">
+<a href=/posts/salt-and-pepper/ rel=bookmark>
+Salt and Pepper
+</a>
+</h2>
+<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-09-19T00:00:00Z>September 19, 2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/brain-play/ rel=category>Brain Play</a>
+</span>
+</div></div>
+</header>
+<div class="content list__excerpt post__content clearfix">
+Chef Charles is creating a couple of salt-and-pepper blends to simplify the process of seasoning a dish. He starts with two ordinary salt and pepper shakers, both the same size and both filled the same amount. To make the seasoning blends, Charles measures out one teaspoon of pepper from the pepper shaker and adds it to the salt shaker, stirring to mix in the pepper evenly; he then measures out one teaspoon of this salt-and-pepper mix, adds it back to the pepper shaker, and stirs.
+</div>
+<div class="list__footer clearfix">
+<a class="list__footer-readmore btn" href=/posts/salt-and-pepper/>Read more…</a>
+</div>
+</article>
+</main>
+<div class=pagination>
+<a class="pagination__item pagination__item--prev btn" href=/posts/>«</a>
+<span class="pagination__item pagination__item--current">2/3</span>
+<a class="pagination__item pagination__item--next btn" href=/posts/page/3/>»</a>
+</div>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=SEARCH… name=q aria-label=SEARCH…>
+</label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=/>
+</form>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>Pleisiosaurus</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/counterfeit-detective/>Counterfeit Detective</a></li>
+<li class=widget__item><a class=widget__link href=/posts/the-magic-checkerboard/>The Magic Checkerboard</a></li>
+<li class=widget__item><a class=widget__link href=/posts/an-interplanetary-currency/>An Interplanetary Currency</a></li>
+<li class=widget__item><a class=widget__link href=/posts/pirate-gold/>Pirate Gold</a></li>
+<li class=widget__item><a class=widget__link href=/posts/stargazing/>Stargazing</a></li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 Go Figure.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML" async></script>
+</body>
+</html>
