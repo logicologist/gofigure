@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://gofiguremath.org"
 title = "Go Figure Math"
 languageCode = "en-us"
 
